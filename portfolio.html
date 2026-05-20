@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="QS Marketing" />
+    <meta
+      name="description"
+      content="QS Marketing Portfolio - Digital Marketing Services & Works"
+    />
+    <!-- ======== Page title ============ -->
+    <title>Portfolio | QS Marketing</title>
+    <!--<< Favcion >>-->
+    <link
+      rel="shortcut icon"
+      href="https://dummyimage.com/64x64/0ea5e9/ffffff.png?text=QS"
+    />
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css" />
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .portfolio-service-card {
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .portfolio-service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+      }
+      .portfolio-works-grid {
+        display: none;
+      }
+      .portfolio-works-grid.active {
+        display: grid;
+      }
+      .work-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        aspect-ratio: 1;
+      }
+      .work-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .work-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .work-item:hover .work-overlay {
+        opacity: 1;
+      }
+      .work-overlay h5 {
+        color: #fff;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      .work-overlay p {
+        color: #0ea5e9;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      .service-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+      .service-tab {
+        padding: 0.75rem 1.5rem;
+        border: 2px solid rgba(14, 165, 233, 0.3);
+        border-radius: 8px;
+        background: transparent;
+        color: #dbe6ff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 500;
+      }
+      .service-tab:hover,
+      .service-tab.active {
+        border-color: #0ea5e9;
+        background: rgba(14, 165, 233, 0.1);
+        color: #0ea5e9;
+      }
+    </style>
+  </head>
+  <body class="body-bg">
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text-preloader="Q" class="letters-loading"> Q </span>
+          <span data-text-preloader="S" class="letters-loading"> S </span>
+          <span data-text-preloader="M" class="letters-loading"> M </span>
+          <span data-text-preloader="A" class="letters-loading"> A </span>
+          <span data-text-preloader="R" class="letters-loading"> R </span>
+          <span data-text-preloader="K" class="letters-loading"> K </span>
+          <span data-text-preloader="T" class="letters-loading"> T </span>
+        </div>
+        <p class="text-center">Loading</p>
+      </div>
+      <div class="loader">
+        <div class="row">
+          <div class="col-3 loader-section section-left">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-left">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-right">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-right">
+            <div class="bg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Back To Top start -->
+    <button id="back-top" class="back-to-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+      <div class="offcanvas__info">
+        <div class="offcanvas__wrapper">
+          <div class="offcanvas__content">
+            <div
+              class="offcanvas__top mb-5 d-flex justify-content-between align-items-center"
+            >
+              <div class="offcanvas__logo">
+                <a href="index.html">
+                  <img
+                    src="https://dummyimage.com/200x50/0ea5e9/ffffff.png?text=QS+Marketing"
+                    alt="logo-img"
+                  />
+                </a>
+              </div>
+              <div class="offcanvas__close">
+                <button>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <p class="text">
+              QS Marketing is a performance-driven digital marketing agency
+              helping brands scale through strategy, creative, and data.
+            </p>
+            <div class="mobile-menu fix mb-5"></div>
+            <div class="offcanvas__contact">
+              <h4>QS Marketing</h4>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon">
+                    <i class="fal fa-map-marker-alt"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a target="_blank" href="#"
+                      >Lahore, Pakistan (Serving Worldwide)</a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fal fa-envelope"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="mailto:hello@qsmarketingexpert.com"
+                      ><span class="mailto:hello@qsmarketingexpert.com"
+                        >hello@qsmarketingexpert.com</span
+                      ></a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fal fa-clock"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a target="_blank" href="#">Mon-Friday, 09am - 06pm</a>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="far fa-phone"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="tel:+923000000000">+92 300 0000000</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="header-button mt-4">
+                <a href="contact.html" class="theme-btn text-center">
+                  Get Proposal
+                </a>
+              </div>
+              <div class="social-icon d-flex align-items-center">
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-1 header-4 header-5">
+      <div class="container-fluid">
+        <div class="mega-menu-wrapper">
+          <div class="header-main style-2">
+            <div class="logo">
+              <a href="index.html" class="header-logo">
+                <img
+                  src="https://dummyimage.com/200x50/0ea5e9/ffffff.png?text=QS+Marketing"
+                  alt="logo-img"
+                />
+              </a>
+            </div>
+            <div class="mean__menu-wrapper">
+              <div class="main-menu">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-dropdown">
+                      <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                      <a href="movie.html"> Services </a>
+                    </li>
+                    <li>
+                      <a href="tv-shows.html"> Case Studies </a>
+                    </li>
+                    <li>
+                      <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                    <li>
+                      <a href="news.html"> Insights </a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div
+              class="header-right d-flex justify-content-end align-items-center"
+            >
+              <div class="tp-header-search d-none d-md-flex">
+                <button class="d-flex align-items-center tp-search-toggle">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <a href="contact.html" class="theme-btn style-3">
+                Get Free Consultation <i class="fa-regular fa-arrow-up-right"></i>
+              </a>
+              <div class="header__hamburger d-xl-none">
+                <div class="sidebar__toggle">
+                  <i class="fas fa-bars"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- tp header search  -->
+    <div class="tp-header-search-bar d-flex align-items-center">
+      <button class="tp-search-close">×</button>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="tp-search-bar text-center">
+              <h2 class="tp-search-bar-title mb-30">
+                What do you want to grow?
+              </h2>
+              <div class="contact-form-box contact-search-form-box">
+                <form action="#">
+                  <input type="email" placeholder="Search services*" />
+                  <button type="submit"><i class="far fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Hero Section Start -->
+    <section class="hero-ssection hero-5 bg-cover" style="background-image: url(https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=1920&q=80);">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div class="hero-content text-center">
+              <h5 class="wow fadeInUp" data-wow-delay=".3s">
+                Our Portfolio
+              </h5>
+              <h1 class="wow fadeInUp" data-wow-delay=".5s">
+                Strategic Work That Drives Real Results
+              </h1>
+              <p class="wow fadeInUp" data-wow-delay=".7s">
+                Explore our collection of digital marketing campaigns, designs, and growth strategies across all service categories.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Services Section Start -->
+    <section class="trending-section-2 section-padding fix">
+      <div class="container">
+        <div class="section-title-area mb-5">
+          <div class="section-title">
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+              Select a Service Category
+            </h2>
+            <p class="text wow fadeInUp" data-wow-delay=".5s">
+              Click any service to view our portfolio works and case studies
+            </p>
+          </div>
+        </div>
+
+        <!-- Service Filter Tabs -->
+        <div class="service-tabs wow fadeInUp" data-wow-delay=".3s">
+          <button class="service-tab active" data-service="social-media">
+            <i class="fa-solid fa-hashtag me-2"></i> Social Media
+          </button>
+          <button class="service-tab" data-service="facebook-instagram">
+            <i class="fa-brands fa-meta me-2"></i> FB & Instagram Ads
+          </button>
+          <button class="service-tab" data-service="google-ads">
+            <i class="fa-brands fa-google me-2"></i> Google Ads
+          </button>
+          <button class="service-tab" data-service="seo">
+            <i class="fa-solid fa-magnifying-glass-chart me-2"></i> SEO
+          </button>
+          <button class="service-tab" data-service="web-dev">
+            <i class="fa-solid fa-code me-2"></i> Web Development
+          </button>
+          <button class="service-tab" data-service="graphic-design">
+            <i class="fa-solid fa-pen-nib me-2"></i> Graphic Design
+          </button>
+          <button class="service-tab" data-service="content">
+            <i class="fa-solid fa-file-lines me-2"></i> Content
+          </button>
+          <button class="service-tab" data-service="branding">
+            <i class="fa-solid fa-layer-group me-2"></i> Branding
+          </button>
+          <button class="service-tab" data-service="lead-gen">
+            <i class="fa-solid fa-funnel-dollar me-2"></i> Lead Gen
+          </button>
+          <button class="service-tab" data-service="email">
+            <i class="fa-solid fa-envelope-open-text me-2"></i> Email
+          </button>
+          <button class="service-tab" data-service="ecommerce">
+            <i class="fa-solid fa-cart-shopping me-2"></i> E-commerce
+          </button>
+          <button class="service-tab" data-service="video">
+            <i class="fa-solid fa-video me-2"></i> Video Editing
+          </button>
+        </div>
+
+        <!-- Social Media Portfolio Works -->
+        <div class="portfolio-works-grid active" data-service="social-media">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=500&q=80" alt="Social Media Campaign 1">
+                <div class="work-overlay">
+                  <h5>Instagram Growth Campaign</h5>
+                  <p>+180K followers in 90 days</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1626446174620-444af74461c7?auto=format&fit=crop&w=500&q=80" alt="Social Media Campaign 2">
+                <div class="work-overlay">
+                  <h5>TikTok Viral Campaign</h5>
+                  <p>5.2M views in 1 month</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="Social Media Campaign 3">
+                <div class="work-overlay">
+                  <h5>LinkedIn B2B Strategy</h5>
+                  <p>320% engagement increase</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1559027615-cd2628902d4a?auto=format&fit=crop&w=500&q=80" alt="Social Media Campaign 4">
+                <div class="work-overlay">
+                  <h5>Community Engagement</h5>
+                  <p>45K qualified leads generated</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1611162617305-c69b3fa7fbe0?auto=format&fit=crop&w=500&q=80" alt="Social Media Campaign 5">
+                <div class="work-overlay">
+                  <h5>Content Calendar Execution</h5>
+                  <p>6 months of consistent posting</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="Social Media Campaign 6">
+                <div class="work-overlay">
+                  <h5>Influencer Collaboration</h5>
+                  <p>8.5M combined reach</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facebook & Instagram Ads Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="facebook-instagram">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="Meta Campaign 1">
+                <div class="work-overlay">
+                  <h5>E-commerce Sales Campaign</h5>
+                  <p>3.8x ROAS | $420K revenue</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=500&q=80" alt="Meta Campaign 2">
+                <div class="work-overlay">
+                  <h5>Lead Generation Funnel</h5>
+                  <p>$8 cost per lead | 420 leads</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=500&q=80" alt="Meta Campaign 3">
+                <div class="work-overlay">
+                  <h5>Video Ad Campaign</h5>
+                  <p>12% video view-through rate</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80" alt="Meta Campaign 4">
+                <div class="work-overlay">
+                  <h5>Retargeting Optimization</h5>
+                  <p>28% conversion uplift</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=500&q=80" alt="Meta Campaign 5">
+                <div class="work-overlay">
+                  <h5>Audience Segmentation</h5>
+                  <p>6 custom audience tiers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="Meta Campaign 6">
+                <div class="work-overlay">
+                  <h5>Carousel Ad Testing</h5>
+                  <p>18% CTR improvement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Ads Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="google-ads">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f70504c38?auto=format&fit=crop&w=500&q=80" alt="Google Ads 1">
+                <div class="work-overlay">
+                  <h5>Search Ad Campaign</h5>
+                  <p>4.2x ROAS | 2,300 conversions</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=500&q=80" alt="Google Ads 2">
+                <div class="work-overlay">
+                  <h5>Shopping Campaign</h5>
+                  <p>$1.2M revenue | 68% YoY</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="Google Ads 3">
+                <div class="work-overlay">
+                  <h5>YouTube Ad Placement</h5>
+                  <p>92M impressions | 2.1% CTR</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=500&q=80" alt="Google Ads 4">
+                <div class="work-overlay">
+                  <h5>Display Network Expansion</h5>
+                  <p>320K impressions daily</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f70504c38?auto=format&fit=crop&w=500&q=80" alt="Google Ads 5">
+                <div class="work-overlay">
+                  <h5>Bid Strategy Optimization</h5>
+                  <p>$4.20 avg CPC reduction</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=500&q=80" alt="Google Ads 6">
+                <div class="work-overlay">
+                  <h5>Keyword Expansion</h5>
+                  <p>560 high-intent keywords</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEO Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="seo">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=500&q=80" alt="SEO Project 1">
+                <div class="work-overlay">
+                  <h5>Organic Traffic Growth</h5>
+                  <p>+240% in 6 months</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80" alt="SEO Project 2">
+                <div class="work-overlay">
+                  <h5>Keyword Rankings</h5>
+                  <p>152 keywords in top 10</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=500&q=80" alt="SEO Project 3">
+                <div class="work-overlay">
+                  <h5>Technical SEO Audit</h5>
+                  <p>45 critical issues fixed</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="SEO Project 4">
+                <div class="work-overlay">
+                  <h5>Content Cluster Strategy</h5>
+                  <p>68 pillar pages + clusters</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f70504c38?auto=format&fit=crop&w=500&q=80" alt="SEO Project 5">
+                <div class="work-overlay">
+                  <h5>Link Building Campaign</h5>
+                  <p>420 high-authority backlinks</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="SEO Project 6">
+                <div class="work-overlay">
+                  <h5>Local SEO Optimization</h5>
+                  <p>1,200 local searches/month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="web-dev">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80" alt="Web Dev 1">
+                <div class="work-overlay">
+                  <h5>Conversion Funnel Website</h5>
+                  <p>32% conversion rate</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=500&q=80" alt="Web Dev 2">
+                <div class="work-overlay">
+                  <h5>E-commerce Platform</h5>
+                  <p>$2.1M annual sales</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=500&q=80" alt="Web Dev 3">
+                <div class="work-overlay">
+                  <h5>Landing Page Suite</h5>
+                  <p>12 high-converting pages</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80" alt="Web Dev 4">
+                <div class="work-overlay">
+                  <h5>Mobile-First Design</h5>
+                  <p>98/100 Lighthouse score</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="Web Dev 5">
+                <div class="work-overlay">
+                  <h5>CRM Integration</h5>
+                  <p>2,400 leads/month captured</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="Web Dev 6">
+                <div class="work-overlay">
+                  <h5>Performance Optimization</h5>
+                  <p>2.1s load time | 42% faster</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graphic Design Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="graphic-design">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Design 1">
+                <div class="work-overlay">
+                  <h5>Brand Identity System</h5>
+                  <p>Logo + 40 brand assets</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Design 2">
+                <div class="work-overlay">
+                  <h5>Ad Creatives Suite</h5>
+                  <p>180 ad banners & variations</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Design 3">
+                <div class="work-overlay">
+                  <h5>Infographic Design</h5>
+                  <p>28 data visualizations</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Design 4">
+                <div class="work-overlay">
+                  <h5>Social Media Templates</h5>
+                  <p>120 ready-to-use designs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Design 5">
+                <div class="work-overlay">
+                  <h5>Packaging Design</h5>
+                  <p>3 product lines designed</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Design 6">
+                <div class="work-overlay">
+                  <h5>Email Newsletter Design</h5>
+                  <p>24 issue template set</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Creation Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="content">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1455849318169-8381d78b3b69?auto=format&fit=crop&w=500&q=80" alt="Content 1">
+                <div class="work-overlay">
+                  <h5>Blog Content Strategy</h5>
+                  <p>120 SEO-optimized posts</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1455849318169-8381d78b3b69?auto=format&fit=crop&w=500&q=80" alt="Content 2">
+                <div class="work-overlay">
+                  <h5>Copywriting Services</h5>
+                  <p>42 conversion-focused pieces</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1455849318169-8381d78b3b69?auto=format&fit=crop&w=500&q=80" alt="Content 3">
+                <div class="work-overlay">
+                  <h5>Whitepaper & Case Study</h5>
+                  <p>8 in-depth reports</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1455849318169-8381d78b3b69?auto=format&fit=crop&w=500&q=80" alt="Content 4">
+                <div class="work-overlay">
+                  <h5>Social Media Captions</h5>
+                  <p>480 monthly posts</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1455849318169-8381d78b3b69?auto=format&fit=crop&w=500&q=80" alt="Content 5">
+                <div class="work-overlay">
+                  <h5>Email Newsletter</h5>
+                  <p>52 weekly issues</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1455849318169-8381d78b3b69?auto=format&fit=crop&w=500&q=80" alt="Content 6">
+                <div class="work-overlay">
+                  <h5>Press Release Series</h5>
+                  <p>12 high-impact releases</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branding Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="branding">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Branding 1">
+                <div class="work-overlay">
+                  <h5>Complete Brand Rebrand</h5>
+                  <p>Identity + messaging + guidelines</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Branding 2">
+                <div class="work-overlay">
+                  <h5>Brand Positioning Strategy</h5>
+                  <p>Market analysis + roadmap</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Branding 3">
+                <div class="work-overlay">
+                  <h5>Brand Guidelines Document</h5>
+                  <p>120-page comprehensive manual</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Branding 4">
+                <div class="work-overlay">
+                  <h5>Corporate Identity</h5>
+                  <p>Logo + stationery suite</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Branding 5">
+                <div class="work-overlay">
+                  <h5>Brand Voice Training</h5>
+                  <p>Tone guide + content standards</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80" alt="Branding 6">
+                <div class="work-overlay">
+                  <h5>Brand Audit & Evolution</h5>
+                  <p>Competitive analysis + refresh</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lead Generation Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="lead-gen">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="Lead Gen 1">
+                <div class="work-overlay">
+                  <h5>Full Funnel Campaign</h5>
+                  <p>3,200 qualified leads</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="Lead Gen 2">
+                <div class="work-overlay">
+                  <h5>Landing Page Optimization</h5>
+                  <p>42% conversion improvement</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="Lead Gen 3">
+                <div class="work-overlay">
+                  <h5>Lead Magnet Strategy</h5>
+                  <p>6 high-converting offers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="Lead Gen 4">
+                <div class="work-overlay">
+                  <h5>Lead Scoring System</h5>
+                  <p>4 qualification tiers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="Lead Gen 5">
+                <div class="work-overlay">
+                  <h5>CRM Automation</h5>
+                  <p>12 automated workflows</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80" alt="Lead Gen 6">
+                <div class="work-overlay">
+                  <h5>Lead Nurture Campaign</h5>
+                  <p>8-email drip sequence</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email Marketing Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="email">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&q=80" alt="Email 1">
+                <div class="work-overlay">
+                  <h5>Email Automation Funnel</h5>
+                  <p>32% open rate | 8.2% CTR</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&q=80" alt="Email 2">
+                <div class="work-overlay">
+                  <h5>Newsletter Series</h5>
+                  <p>52 weekly editions | 24K subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&q=80" alt="Email 3">
+                <div class="work-overlay">
+                  <h5>Behavioral Triggers</h5>
+                  <p>14 automated email sequences</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&q=80" alt="Email 4">
+                <div class="work-overlay">
+                  <h5>A/B Testing Program</h5>
+                  <p>52 subject line tests</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&q=80" alt="Email 5">
+                <div class="work-overlay">
+                  <h5>List Segmentation</h5>
+                  <p>8 custom audience segments</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&q=80" alt="Email 6">
+                <div class="work-overlay">
+                  <h5>Abandoned Cart Recovery</h5>
+                  <p>$184K revenue recovered</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- E-commerce Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="ecommerce">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80" alt="Ecommerce 1">
+                <div class="work-overlay">
+                  <h5>Store Revenue Growth</h5>
+                  <p>$2.1M annual | +68% YoY</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80" alt="Ecommerce 2">
+                <div class="work-overlay">
+                  <h5>Product Page Optimization</h5>
+                  <p>28% conversion uplift</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80" alt="Ecommerce 3">
+                <div class="work-overlay">
+                  <h5>Checkout Funnel Recovery</h5>
+                  <p>$420K recovered revenue</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80" alt="Ecommerce 4">
+                <div class="work-overlay">
+                  <h5>Customer Retention</h5>
+                  <p>31% repeat purchase rate</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80" alt="Ecommerce 5">
+                <div class="work-overlay">
+                  <h5>AOV Increase Campaign</h5>
+                  <p>$42 average order value +18%</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80" alt="Ecommerce 6">
+                <div class="work-overlay">
+                  <h5>Inventory & Fulfillment</h5>
+                  <p>95% order fulfillment</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Editing Portfolio Works -->
+        <div class="portfolio-works-grid" data-service="video">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=500&q=80" alt="Video 1">
+                <div class="work-overlay">
+                  <h5>Product Demo Video</h5>
+                  <p>3.2M views | 12.1% CTR</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=500&q=80" alt="Video 2">
+                <div class="work-overlay">
+                  <h5>Social Media Reels</h5>
+                  <p>120 short-form videos</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=500&q=80" alt="Video 3">
+                <div class="work-overlay">
+                  <h5>Ad Video Campaign</h5>
+                  <p>42 video ad variations</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=500&q=80" alt="Video 4">
+                <div class="work-overlay">
+                  <h5>Testimonial Series</h5>
+                  <p>24 client testimonials</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=500&q=80" alt="Video 5">
+                <div class="work-overlay">
+                  <h5>Explainer Animation</h5>
+                  <p>8 animated explainers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="work-item">
+                <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=500&q=80" alt="Video 6">
+                <div class="work-overlay">
+                  <h5>Live Stream Production</h5>
+                  <p>52 weekly live sessions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="movie-ticket-section section-padding fix bg-cover" style="background-image: url(https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=80);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="mb-4">Ready to See Your Brand's Potential?</h2>
+            <p class="mb-4">Let's discuss how our proven strategies can scale your business.</p>
+            <a href="contact.html" class="theme-btn style-3">
+              Schedule Free Strategy Call <i class="fa-regular fa-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section-5">
+      <div class="footer-widgets-wrapper style-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <a href="index.html">
+                    <img src="https://dummyimage.com/200x50/0ea5e9/ffffff.png?text=QS+Marketing" alt="logo-img" />
+                  </a>
+                </div>
+                <div class="footer-content">
+                  <p>
+                    QS Marketing is a full-service digital agency helping brands
+                    grow through performance marketing, creative, and strategy.
+                  </p>
+                  <div class="social-icon d-flex align-items-center">
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Quick links</h3>
+                </div>
+                <div class="footer-content">
+                  <ul class="list-area">
+                    <li><a href="index.html"><i class="fa-solid fa-chevrons-right"></i> Home</a></li>
+                    <li><a href="movie.html"><i class="fa-solid fa-chevrons-right"></i> Services</a></li>
+                    <li><a href="tv-shows.html"><i class="fa-solid fa-chevrons-right"></i> Case Studies</a></li>
+                    <li><a href="portfolio.html"><i class="fa-solid fa-chevrons-right"></i> Portfolio</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 ps-lg-3 wow fadeInUp" data-wow-delay=".6s">
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Services</h3>
+                </div>
+                <div class="footer-content">
+                  <ul class="list-area">
+                    <li><a href="#"><i class="fa-solid fa-chevrons-right"></i> Social Media</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevrons-right"></i> Google Ads</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevrons-right"></i> SEO</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevrons-right"></i> Web Dev</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".8s">
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Contact Us</h3>
+                </div>
+                <div class="contact-us-item">
+                  <div class="contact-item">
+                    <div class="icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h6>Lahore, Pakistan | Serving Worldwide</h6>
+                  </div>
+                  <div class="contact-item">
+                    <div class="icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h6>
+                      <a href="mailto:hello@qsmarketingexpert.com"
+                        >hello@qsmarketingexpert.com</a
+                      >
+                    </h6>
+                  </div>
+                  <div class="contact-item mb-0">
+                    <div class="icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h6>
+                      <a href="tel:+923000000000">+92 300 0000000</a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom style-2">
+        <div class="container">
+          <p class="wow fadeInUp" data-wow-delay=".3s">
+            © Copyright 2024
+            <a href="https://www.linkedin.com/in/nawabdeveloprs/" style="color: #0ea5e9">
+              QS Marketing
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Portfolio service filter functionality
+      document.querySelectorAll('.service-tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+          const service = this.getAttribute('data-service');
+          
+          // Remove active class from all tabs and grids
+          document.querySelectorAll('.service-tab').forEach(t => t.classList.remove('active'));
+          document.querySelectorAll('.portfolio-works-grid').forEach(g => g.classList.remove('active'));
+          
+          // Add active class to clicked tab and corresponding grid
+          this.classList.add('active');
+          const grid = document.querySelector(`.portfolio-works-grid[data-service="${service}"]`);
+          if (grid) grid.classList.add('active');
+        });
+      });
+    </script>
+  </body>
+</html>
