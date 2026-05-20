@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="QS Marketing" />
+    <meta
+      name="description"
+      content="QS Marketing Case Studies | Proven Results & Success Stories"
+    />
+    <title>Case Studies | QS Marketing</title>
+    <link
+      rel="shortcut icon"
+      href="https://dummyimage.com/64x64/0ea5e9/ffffff.png?text=QS"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/color.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .case-study-card {
+        background: linear-gradient(
+          135deg,
+          rgba(30, 41, 59, 0.8) 0%,
+          rgba(15, 23, 42, 0.9) 100%
+        );
+        border: 1px solid rgba(14, 165, 233, 0.2);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .case-study-card:hover {
+        border-color: #0ea5e9;
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(14, 165, 233, 0.2);
+      }
+      .case-study-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        overflow: hidden;
+      }
+      .case-study-content {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+      .case-study-category {
+        display: inline-block;
+        background: rgba(14, 165, 233, 0.15);
+        color: #38bdf8;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+        width: fit-content;
+        border: 1px solid rgba(14, 165, 233, 0.3);
+      }
+      .case-study-title {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+        line-height: 1.4;
+      }
+      .case-study-desc {
+        color: #94a3b8;
+        margin-bottom: 20px;
+        flex-grow: 1;
+        line-height: 1.6;
+      }
+      .case-study-stats {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        border-top: 1px solid rgba(14, 165, 233, 0.1);
+      }
+      .stat-item {
+        flex: 1;
+        min-width: 100px;
+      }
+      .stat-value {
+        color: #0ea5e9;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      .stat-label {
+        color: #64748b;
+        font-size: 0.85rem;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body class="body-bg">
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text-preloader="Q" class="letters-loading"> Q </span>
+          <span data-text-preloader="S" class="letters-loading"> S </span>
+        </div>
+        <p class="text-center">Loading</p>
+      </div>
+      <div class="loader">
+        <div class="row">
+          <div class="col-3 loader-section section-left">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-left">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-right">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-right">
+            <div class="bg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <button id="back-top" class="back-to-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+      <div class="offcanvas__info">
+        <div class="offcanvas__wrapper">
+          <div class="offcanvas__content">
+            <div
+              class="offcanvas__top mb-5 d-flex justify-content-between align-items-center"
+            >
+              <div class="offcanvas__logo">
+                <a href="index.html">
+                  <img
+                    src="https://dummyimage.com/200x50/0ea5e9/ffffff.png?text=QS+Marketing"
+                    alt="logo-img"
+                  />
+                </a>
+              </div>
+              <div class="offcanvas__close">
+                <button><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+            <p class="text">
+              QS Marketing is your complete digital marketing partner for
+              growth, strategy, and proven results.
+            </p>
+            <div class="mobile-menu fix mb-5"></div>
+            <div class="offcanvas__contact">
+              <h4>QS Marketing</h4>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon">
+                    <i class="fal fa-map-marker-alt"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a target="_blank" href="#"
+                      >Lahore, Pakistan (Serving Worldwide)</a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fal fa-envelope"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="mailto:hello@qsmarketingexpert.com"
+                      ><span>hello@qsmarketingexpert.com</span></a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fal fa-clock"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a target="_blank" href="#">Mon-Friday, 09am - 06pm</a>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="far fa-phone"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="tel:+923000000000">+92 300 0000000</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="header-button mt-4">
+                <a href="contact.html" class="theme-btn text-center"
+                  >Get Proposal</a
+                >
+              </div>
+              <div class="social-icon d-flex align-items-center">
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-1 header-4 header-5">
+      <div class="container-fluid">
+        <div class="mega-menu-wrapper">
+          <div class="header-main style-2">
+            <div class="logo">
+              <a href="index.html" class="header-logo">
+                <img
+                  src="https://dummyimage.com/200x50/0ea5e9/ffffff.png?text=QS+Marketing"
+                  alt="logo-img"
+                />
+              </a>
+            </div>
+            <div class="mean__menu-wrapper">
+              <div class="main-menu">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="news.html">Insights</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div
+              class="header-right d-flex justify-content-end align-items-center"
+            >
+              <div class="tp-header-search d-none d-md-flex">
+                <button class="d-flex align-items-center tp-search-toggle">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <a href="contact.html" class="theme-btn style-3">
+                Get Free Consultation
+                <i class="fa-regular fa-arrow-up-right"></i>
+              </a>
+              <div class="header__hamburger d-xl-none">
+                <div class="sidebar__toggle">
+                  <i class="fas fa-bars"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb Section -->
+    <div
+      class="breadcrumb-wrapper bg-cover"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1920&q=80&quot;);
+      "
+    >
+      <div class="container">
+        <div class="page-heading">
+          <div class="page-header-left">
+            <h1 class="wow fadeInUp" data-wow-delay=".3s">Case Studies</h1>
+            <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+              <li>
+                <a href="index.html">
+                  <i class="fa-solid fa-house"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-slash-forward"></i>
+              </li>
+              <li>Case Studies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Studies Section Start -->
+    <section class="trending-section-2 section-padding fix">
+      <div class="container">
+        <div class="section-title-area text-center mb-5">
+          <div class="section-title style-2">
+            <h2>Our Success Stories</h2>
+            <p>Real results from real clients across various industries</p>
+          </div>
+        </div>
+
+        <!-- Case Studies Grid -->
+        <div class="row">
+          <!-- Case Study 1: E-commerce Sales Growth -->
+          <div
+            class="col-lg-6 col-md-12 mb-40 wow fadeInUp"
+            data-wow-delay=".2s"
+          >
+            <div class="case-study-card">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-adf4e565db18?auto=format&fit=crop&w=600&q=80"
+                alt="E-commerce Growth"
+                class="case-study-image"
+              />
+              <div class="case-study-content">
+                <div class="case-study-category">E-Commerce Marketing</div>
+                <h4 class="case-study-title">
+                  E-Commerce Store: 320% Revenue Growth
+                </h4>
+                <p class="case-study-desc">
+                  Implemented integrated digital marketing strategy combining
+                  Facebook Ads, Google Shopping, and SEO for an online fashion
+                  retailer.
+                </p>
+                <div class="case-study-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">320%</div>
+                    <div class="stat-label">Revenue Growth</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">5.2x</div>
+                    <div class="stat-label">ROI</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">42%</div>
+                    <div class="stat-label">Conversion ↑</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 2: SaaS Lead Generation -->
+          <div
+            class="col-lg-6 col-md-12 mb-40 wow fadeInUp"
+            data-wow-delay=".3s"
+          >
+            <div class="case-study-card">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80"
+                alt="Lead Generation"
+                class="case-study-image"
+              />
+              <div class="case-study-content">
+                <div class="case-study-category">Lead Generation</div>
+                <h4 class="case-study-title">
+                  SaaS Company: 500+ Qualified Leads/Month
+                </h4>
+                <p class="case-study-desc">
+                  Built comprehensive lead generation funnel with optimized
+                  landing pages, targeted ads, and email nurture sequences for
+                  B2B SaaS.
+                </p>
+                <div class="case-study-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">500+</div>
+                    <div class="stat-label">Leads/Month</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">$6.50</div>
+                    <div class="stat-label">Cost/Lead</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">28%</div>
+                    <div class="stat-label">Conv. Rate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 3: Local SEO -->
+          <div
+            class="col-lg-6 col-md-12 mb-40 wow fadeInUp"
+            data-wow-delay=".4s"
+          >
+            <div class="case-study-card">
+              <img
+                src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=600&q=80"
+                alt="Local SEO"
+                class="case-study-image"
+              />
+              <div class="case-study-content">
+                <div class="case-study-category">Local SEO</div>
+                <h4 class="case-study-title">
+                  Home Services: Dominated Local Search
+                </h4>
+                <p class="case-study-desc">
+                  Executed comprehensive local SEO strategy including GMB
+                  optimization, local citations, and service area targeting for
+                  home services company.
+                </p>
+                <div class="case-study-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Top Rankings</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">1,200</div>
+                    <div class="stat-label">Monthly Leads</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">$0.8M</div>
+                    <div class="stat-label">Revenue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 4: Social Media Growth -->
+          <div
+            class="col-lg-6 col-md-12 mb-40 wow fadeInUp"
+            data-wow-delay=".5s"
+          >
+            <div class="case-study-card">
+              <img
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80"
+                alt="Social Growth"
+                class="case-study-image"
+              />
+              <div class="case-study-content">
+                <div class="case-study-category">Social Media Marketing</div>
+                <h4 class="case-study-title">
+                  Brand: From 10K to 100K Followers
+                </h4>
+                <p class="case-study-desc">
+                  Developed and executed comprehensive social media strategy
+                  with content planning, community management, and paid
+                  amplification.
+                </p>
+                <div class="case-study-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">900%</div>
+                    <div class="stat-label">Growth</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">25%</div>
+                    <div class="stat-label">Engagement</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">50K</div>
+                    <div class="stat-label">Sales</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 5: Rebranding Campaign -->
+          <div
+            class="col-lg-6 col-md-12 mb-40 wow fadeInUp"
+            data-wow-delay=".6s"
+          >
+            <div class="case-study-card">
+              <img
+                src="https://images.unsplash.com/photo-1633356122544-f134324ef6cb?auto=format&fit=crop&w=600&q=80"
+                alt="Branding"
+                class="case-study-image"
+              />
+              <div class="case-study-content">
+                <div class="case-study-category">Branding</div>
+                <h4 class="case-study-title">
+                  Corporate Rebrand: +85% Brand Sentiment
+                </h4>
+                <p class="case-study-desc">
+                  Comprehensive rebranding including new identity, positioning,
+                  messaging, and multi-channel launch campaign for established
+                  corporation.
+                </p>
+                <div class="case-study-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">+85%</div>
+                    <div class="stat-label">Sentiment</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">92%</div>
+                    <div class="stat-label">Recognition</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">$500K</div>
+                    <div class="stat-label">New Biz</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 6: Content Marketing -->
+          <div
+            class="col-lg-6 col-md-12 mb-40 wow fadeInUp"
+            data-wow-delay=".7s"
+          >
+            <div class="case-study-card">
+              <img
+                src="https://images.unsplash.com/photo-1642427552022-7efb9f5a5c1d?auto=format&fit=crop&w=600&q=80"
+                alt="Content"
+                class="case-study-image"
+              />
+              <div class="case-study-content">
+                <div class="case-study-category">Content Marketing</div>
+                <h4 class="case-study-title">
+                  B2B Publisher: 500K Monthly Organic
+                </h4>
+                <p class="case-study-desc">
+                  Designed and executed content strategy with SEO-optimized blog
+                  posts, guides, and resources generating significant organic
+                  traffic.
+                </p>
+                <div class="case-study-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">500K</div>
+                    <div class="stat-label">Monthly Visits</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">800+</div>
+                    <div class="stat-label">Keywords #1</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">250K</div>
+                    <div class="stat-label">Leads</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 7: Google Ads -->
+          <div
+            class="col-lg-6 col-md-12 mb-40 wow fadeInUp"
+            data-wow-delay=".8s"
+          >
+            <div class="case-study-card">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f70504c38?auto=format&fit=crop&w=600&q=80"
+                alt="Google Ads"
+                class="case-study-image"
+              />
+              <div class="case-study-content">
+                <div class="case-study-category">Google Ads</div>
+                <h4 class="case-study-title">
+                  Legal Services: $2.1M Revenue via PPC
+                </h4>
+                <p class="case-study-desc">
+                  Optimized Google Ads account for legal services firm including
+                  search, display, and YouTube campaigns with strict budget
+                  management.
+                </p>
+                <div class="case-study-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">$2.1M</div>
+                    <div class="stat-label">Revenue</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">8.2x</div>
+                    <div class="stat-label">ROI</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">$180</div>
+                    <div class="stat-label">Per Lead</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 8: Email Marketing -->
+          <div
+            class="col-lg-6 col-md-12 mb-40 wow fadeInUp"
+            data-wow-delay=".9s"
+          >
+            <div class="case-study-card">
+              <img
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80"
+                alt="Email"
+                class="case-study-image"
+              />
+              <div class="case-study-content">
+                <div class="case-study-category">Email Marketing</div>
+                <h4 class="case-study-title">
+                  E-Commerce: $500K Revenue from Email
+                </h4>
+                <p class="case-study-desc">
+                  Implemented comprehensive email marketing strategy including
+                  automation, segmentation, and optimization generating
+                  recurring revenue stream.
+                </p>
+                <div class="case-study-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">$500K</div>
+                    <div class="stat-label">Annual Revenue</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">42x</div>
+                    <div class="stat-label">ROI</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">35%</div>
+                    <div class="stat-label">Open Rate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="movie-ticket-section section-padding fix bg-cover"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=80&quot;);
+      "
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="mb-4">Ready for Your Success Story?</h2>
+            <p class="mb-4">
+              Let's discuss how we can achieve similar or better results for
+              your business.
+            </p>
+            <a href="contact.html" class="theme-btn style-3">
+              Get Free Strategy Session
+              <i class="fa-regular fa-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section-5">
+      <div class="footer-widgets-wrapper style-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <a href="index.html">
+                    <img
+                      src="https://dummyimage.com/200x50/0ea5e9/ffffff.png?text=QS+Marketing"
+                      alt="logo-img"
+                    />
+                  </a>
+                </div>
+                <div class="footer-content">
+                  <p>
+                    QS Marketing is a full-service digital agency helping brands
+                    grow through performance marketing, creative, and strategy.
+                  </p>
+                  <div class="social-icon d-flex align-items-center">
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head"><h3>Quick links</h3></div>
+                <div class="footer-content">
+                  <ul class="list-area">
+                    <li>
+                      <a href="index.html"
+                        ><i class="fa-solid fa-chevrons-right"></i> Home</a
+                      >
+                    </li>
+                    <li>
+                      <a href="services.html"
+                        ><i class="fa-solid fa-chevrons-right"></i> Services</a
+                      >
+                    </li>
+                    <li>
+                      <a href="case-studies.html"
+                        ><i class="fa-solid fa-chevrons-right"></i> Case
+                        Studies</a
+                      >
+                    </li>
+                    <li>
+                      <a href="portfolio.html"
+                        ><i class="fa-solid fa-chevrons-right"></i> Portfolio</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-6 ps-lg-3 wow fadeInUp"
+              data-wow-delay=".6s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head"><h3>Services</h3></div>
+                <div class="footer-content">
+                  <ul class="list-area">
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-chevrons-right"></i> Social
+                        Media</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-chevrons-right"></i> Google
+                        Ads</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-chevrons-right"></i> SEO</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-chevrons-right"></i> Web Dev</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp"
+              data-wow-delay=".8s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head"><h3>Contact Us</h3></div>
+                <div class="contact-us-item">
+                  <div class="contact-item">
+                    <div class="icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h6>Lahore, Pakistan | Serving Worldwide</h6>
+                  </div>
+                  <div class="contact-item">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h6>
+                      <a href="mailto:hello@qsmarketingexpert.com"
+                        >hello@qsmarketingexpert.com</a
+                      >
+                    </h6>
+                  </div>
+                  <div class="contact-item mb-0">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <h6><a href="tel:+923000000000">+92 300 0000000</a></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom style-2">
+        <div class="container">
+          <p class="wow fadeInUp" data-wow-delay=".3s">
+            © Copyright 2024
+            <a href="#" style="color: #0ea5e9">QS Marketing</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
