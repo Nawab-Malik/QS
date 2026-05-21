@@ -3631,9 +3631,15 @@ span {
   -ms-transform: translateX(calc(100% + 80px));
   -o-transform: translateX(calc(100% + 80px));
   transform: translateX(calc(100% + 80px));
-  -webkit-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  -moz-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+  -webkit-transition:
+    transform 0.45s ease-in-out,
+    opacity 0.45s ease-in-out;
+  -moz-transition:
+    transform 0.45s ease-in-out,
+    opacity 0.45s ease-in-out;
+  transition:
+    transform 0.45s ease-in-out,
+    opacity 0.45s ease-in-out;
   z-index: 99999;
   overflow-y: scroll;
   overscroll-behavior-y: contain;
@@ -4625,10 +4631,18 @@ span {
   background-position: center center;
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: opacity 1500ms ease-in, -webkit-transform 7000ms ease;
-  transition: opacity 1500ms ease-in, -webkit-transform 7000ms ease;
-  transition: transform 9000ms ease, opacity 1500ms ease-in;
-  transition: transform 9000ms ease, opacity 1500ms ease-in,
+  -webkit-transition:
+    opacity 1500ms ease-in,
+    -webkit-transform 7000ms ease;
+  transition:
+    opacity 1500ms ease-in,
+    -webkit-transform 7000ms ease;
+  transition:
+    transform 9000ms ease,
+    opacity 1500ms ease-in;
+  transition:
+    transform 9000ms ease,
+    opacity 1500ms ease-in,
     -webkit-transform 9000ms ease;
 }
 .hero-2 .hero-items .hero-slider-bg::before {
@@ -6122,7 +6136,11 @@ span {
   }
 }
 .preloader .animation-preloader .txt-loading {
-  font: bold 5em "Syne", sans-serif, "Open Sans", sans-serif;
+  font:
+    bold 5em "Syne",
+    sans-serif,
+    "Open Sans",
+    sans-serif;
   text-align: center;
   user-select: none;
 }
@@ -6243,12 +6261,21 @@ span {
   height: 6px;
   z-index: 10000001;
   background-color: var(--theme);
-  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  -o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    margin 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  -o-transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    margin 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    margin 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 
 .cursor-inner.cursor-hover {
@@ -9795,8 +9822,8 @@ span {
   }
 }
 .upcoming-movie-main-item .upcoming-movie-item .upcoming-movie-image img {
-  width: 100%;
-  height: 100%;
+  width: 30vw;
+  /* height: 100%; */
 }
 @media (max-width: 1199px) {
   .upcoming-movie-main-item .upcoming-movie-item .upcoming-movie-image {
@@ -10384,7 +10411,9 @@ span {
 .movie-sponsor-item .sponsor-image {
   max-width: 160px;
 }
-
+.sponsor-image img {
+  width: 10vw;
+}
 .movie-sponsor-item-2 {
   display: flex;
   align-items: center;
