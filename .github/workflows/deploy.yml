@@ -8,18 +8,20 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Deploy to Hostinger
-        uses: easingthemes/ssh-deploy@main
+        uses: easingthemes/ssh-deploy@v6
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           REMOTE_PORT: ${{ secrets.PORT }}
+          SSH_CMD_ARGS: -o StrictHostKeyChecking=accept-new -o ConnectTimeout=30
           SOURCE: "./"
           TARGET: "/home/${{ secrets.USERNAME }}/public_html/"
           EXCLUDE: "/.git/, /.github/, /node_modules/"
