@@ -1,4 +1,4 @@
-name: Deploy to Hostinger
+name: Deploy to Hostinger via FTP
 
 on:
   push:
@@ -6,20 +6,25 @@ on:
       - main
 
 jobs:
-  deploy:
+  ftp-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Deploy to Hostinger
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.HOST }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
-          REMOTE_PORT: ${{ secrets.PORT }}
-          SOURCE: "./"
-          TARGET: "/home/${{ secrets.USERNAME }}/public_html/"
-          EXCLUDE: "/.git/, /.github/, /node_modules/"
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          local-dir: ./
+          server-dir: public_html/
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/node_modules/**
+            **/.env
+            **/README.md
