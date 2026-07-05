@@ -1,14 +1,15 @@
 <?php
 require_once __DIR__ . "/../includes/config.php";
 
-$adminEmail = "admin@qsmarketing.com";
-$adminPassword = "Admin@123";
+$adminEmail = "admin@qsmarketingexperts.online";
+$adminPassword = "QSmarketing@1";
 
 $root = new mysqli(DB_HOST, DB_USER, DB_PASS);
 if ($root->connect_error) {
     die("Connection failed: " . $root->connect_error);
 }
-$root->query("CREATE DATABASE IF NOT EXISTS " . DB_NAME . " CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
+// Removed database creation for live server as it's usually pre-created
+// $root->query("CREATE DATABASE IF NOT EXISTS " . DB_NAME . " CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
 $root->close();
 
 require_once __DIR__ . "/../includes/db.php";
