@@ -561,6 +561,7 @@ span {
   bottom: 50px;
   left: -50px;
 }
+
 @media (max-width: 1399px) {
   .about-wrapper-4 .about-image .about-image-2 {
     left: 0;
@@ -699,7 +700,7 @@ span {
   color: var(--white);
 }
 .about-wrapper-5 .about-content .about-right-item {
-  margin-left: -118px;
+  /* margin-left: -118px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -5004,7 +5005,7 @@ span {
 }
 
 .hero-5 {
-  padding: 180px 0 0;
+  padding: 70px 0 0;
   position: relative;
 }
 @media (max-width: 1199px) {
@@ -5108,7 +5109,7 @@ span {
   z-index: 999;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20px;
+  bottom: 10px;
   border: 2px solid #871abb;
 }
 @media (max-width: 1199px) {

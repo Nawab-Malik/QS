@@ -11,7 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Admin | QS Marketing</title>
-    <link rel="shortcut icon" href="https://dummyimage.com/64x64/0ea5e9/ffffff.png?text=QS" />
+    <link rel="shortcut icon" href="/assets/img/favicon.jpeg" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/animate.css" />
@@ -51,7 +51,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
         .admin-input:focus {
             background: rgba(4, 10, 25, 0.9);
-            border-color: #0ea5e9;
+            border-color: #A30F71;
             box-shadow: none;
             color: #dbe6ff;
         }
@@ -65,8 +65,7 @@ if (session_status() === PHP_SESSION_NONE) {
                 <div class="header-main style-2">
                     <div class="logo">
                         <a href="../index.html" class="header-logo">
-                            <img src="https://dummyimage.com/200x50/0ea5e9/ffffff.png?text=QS+Marketing"
-                                alt="logo-img" />
+                            <img width="200" src="assets/img/logo/QS Logo.png" alt="logo-img" />
                         </a>
                     </div>
                     <div class="mean__menu-wrapper">

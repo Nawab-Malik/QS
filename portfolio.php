@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . "/includes/db.php";
 
 function portfolio_escape(string $value): string
@@ -30,7 +30,7 @@ foreach ($items as $item) {
     <meta name="author" content="QS Marketing" />
     <meta name="description" content="QS Marketing Portfolio - Digital Marketing Case Studies & Work" />
     <title>Portfolio | QS Marketing</title>
-    <link rel="shortcut icon" href="https://dummyimage.com/64x64/0ea5e9/ffffff.png?text=QS" />
+    <link rel="shortcut icon" href="/assets/img/favicon.jpeg" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
@@ -109,7 +109,7 @@ foreach ($items as $item) {
         }
 
         .work-overlay p {
-            color: #0ea5e9;
+            color: #A30F71;
             font-size: 0.9rem;
         }
 
@@ -133,9 +133,9 @@ foreach ($items as $item) {
 
         .service-tab:hover,
         .service-tab.active {
-            border-color: #0ea5e9;
+            border-color: #A30F71;
             background: rgba(14, 165, 233, 0.1);
-            color: #0ea5e9;
+            color: #A30F71;
         }
     </style>
 </head>
@@ -187,8 +187,7 @@ foreach ($items as $item) {
                     <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
                             <a href="index.html">
-                                <img src="https://dummyimage.com/200x50/0ea5e9/ffffff.png?text=QS+Marketing"
-                                    alt="logo-img" />
+                                <img width="200" src="assets/img/logo/QS Logo.png" alt="logo-img" />
                             </a>
                         </div>
                         <div class="offcanvas__close">
@@ -258,21 +257,21 @@ foreach ($items as $item) {
     </div>
     <div class="offcanvas__overlay"></div>
 
+    <!-- Header Section Start -->
     <header class="header-1 header-4 header-5">
         <div class="container-fluid">
             <div class="mega-menu-wrapper">
                 <div class="header-main style-2">
                     <div class="logo">
                         <a href="index.html" class="header-logo">
-                            <img src="https://dummyimage.com/200x50/0ea5e9/ffffff.png?text=QS+Marketing"
-                                alt="logo-img" />
+                            <img width="200" src="assets/img/logo/QS Logo.png" alt="logo-img" />
                         </a>
                     </div>
                     <div class="mean__menu-wrapper">
                         <div class="main-menu">
                             <nav id="mobile-menu">
                                 <ul>
-                                    <li class="has-dropdown">
+                                    <li class="has-dropdown active">
                                         <a href="index.html"> Home </a>
                                     </li>
                                     <li>
@@ -283,6 +282,15 @@ foreach ($items as $item) {
                                     </li>
                                     <li>
                                         <a href="portfolio.php"> Portfolio </a>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="about.html"> Company </a>
+                                        <ul class="submenu">
+                                            <li><a href="about.html">About QS Marketing</a></li>
+                                            <li><a href="team.html">Team</a></li>
+                                            <li><a href="pricing.html">Pricing</a></li>
+                                            <li><a href="404.html">Error 404</a></li>
+                                        </ul>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
@@ -420,8 +428,7 @@ foreach ($items as $item) {
                         <div class="single-footer-widget">
                             <div class="widget-head">
                                 <a href="index.html">
-                                    <img src="https://dummyimage.com/200x50/0ea5e9/ffffff.png?text=QS+Marketing"
-                                        alt="logo-img" />
+                                    <img width="200" src="assets/img/logo/QS Logo.png" alt="logo-img" />
                                 </a>
                             </div>
                             <div class="footer-content">
@@ -515,10 +522,10 @@ foreach ($items as $item) {
         <div class="footer-bottom style-2">
             <div class="container">
                 <p class="wow fadeInUp" data-wow-delay=".3s">
-                    © Copyright 2024
-                    <a href="qsmarketingexerts.com" style="color: #0ea5e9">QS Marketing</a>
+                    Â© Copyright 2024
+                    <a href="qsmarketingexerts.com" style="color: #A30F71">QS Marketing</a>
                     | Developed by
-                    <a href="https://www.linkedin.com/in/adnanbashir-full-stack-developer" style="color: #0ea5e9">Adnan
+                    <a href="https://www.linkedin.com/in/adnanbashir-full-stack-developer" style="color: #A30F71">Adnan
                         Bashir</a>
                 </p>
             </div>

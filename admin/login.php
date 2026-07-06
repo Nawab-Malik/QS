@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Admin Login | QS Marketing</title>
-    <link rel="shortcut icon" href="https://dummyimage.com/64x64/0ea5e9/ffffff.png?text=QS" />
+    <link rel="shortcut icon" href="/assets/img/favicon.jpeg" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/color.css" />
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         .admin-input:focus {
             background: rgba(4, 10, 25, 0.9);
-            border-color: #0ea5e9;
+            border-color: #A30F71;
             box-shadow: none;
             color: #dbe6ff;
         }
