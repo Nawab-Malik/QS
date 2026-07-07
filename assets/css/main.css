@@ -97,6 +97,18 @@ body {
   overflow-x: hidden;
 }
 
+.form-message {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.form-message.success {
+  color: #28a745;
+}
+.form-message.error {
+  color: #dc3545;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -10016,7 +10028,7 @@ span {
 .upcoming-movie-section .text {
   font-size: 100px;
   font-weight: 800;
-  color: #142222;
+  /* color: #142222; */
   margin-bottom: 40px;
   text-align: center;
 }

@@ -6,16 +6,16 @@ $preloader = @"
         <div class="txt-loading">
           <span data-text-preloader="Q" class="letters-loading"> Q </span>
           <span data-text-preloader="S" class="letters-loading"> S </span>
-          <span data-text-preloader="T" class="letters-loading"> </span>
+          <span data-text-preloader=" " class="letters-loading"> </span>
           <span data-text-preloader="M" class="letters-loading"> M </span>
           <span data-text-preloader="A" class="letters-loading"> A </span>
           <span data-text-preloader="R" class="letters-loading"> R </span>
           <span data-text-preloader="K" class="letters-loading"> K </span>
-          <span data-text-preloader="T" class="letters-loading"> E </span>
+          <span data-text-preloader="E" class="letters-loading"> E </span>
           <span data-text-preloader="T" class="letters-loading"> T </span>
-          <span data-text-preloader="T" class="letters-loading"> I </span>
-          <span data-text-preloader="T" class="letters-loading"> N </span>
-          <span data-text-preloader="T" class="letters-loading"> G </span>
+          <span data-text-preloader="I" class="letters-loading"> I </span>
+          <span data-text-preloader="N" class="letters-loading"> N </span>
+          <span data-text-preloader="G" class="letters-loading"> G </span>
         </div>
         <p class="text-center">Loading</p>
       </div>
