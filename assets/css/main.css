@@ -4810,6 +4810,10 @@ span {
   transform: translateY(0px);
   transition: all 2500ms ease;
 }
+.swiper-slide img {
+  width: 200px;
+  height: 200px;
+}
 
 .hero-3 .hero-image-area {
   padding: 250px 250px;
@@ -7397,7 +7401,7 @@ span {
 .scrolling-wrap-2 .comm .cmn-textslide {
   font-size: 100px;
   font-weight: 800;
-  line-height: 80px;
+  line-height: 120px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -10322,6 +10326,7 @@ span {
   .movie-ticket-content
   .ticket-count-item
   .ticket-count-box {
+  z-index: 1;
   background-color: #142222;
   border-radius: 12px;
   padding: 24px;
