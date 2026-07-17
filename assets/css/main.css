@@ -2491,6 +2491,7 @@ span {
 .instagram-wrapper .instagram-banner-items .banner-image img {
   width: 100%;
   height: 100%;
+  border-radius: 420px;
 }
 .instagram-wrapper .instagram-banner-items .banner-image::before {
   position: absolute;
@@ -10356,7 +10357,7 @@ span {
   .ticket-count-box
   h2 {
   color: var(--white);
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
 }
 @media (max-width: 575px) {
@@ -10427,10 +10428,77 @@ span {
   }
 }
 .movie-sponsor-item .sponsor-image {
-  max-width: 160px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  perspective: 1000px;
+  overflow: hidden;
 }
+
+.movie-sponsor-item .sponsor-image::before {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -40%;
+  width: 60%;
+  height: 300%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0)
+  );
+  transform: rotate(25deg);
+  transition: 0.7s;
+}
+
+.movie-sponsor-item .sponsor-image:hover::before {
+  left: 130%;
+}
+
 .sponsor-image img {
   width: 10vw;
+  min-width: 90px;
+  max-width: 150px;
+  border-radius: 20px;
+  display: block;
+  transition:
+    transform 0.45s ease,
+    filter 0.45s ease;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.35));
+}
+
+.movie-sponsor-item .sponsor-image:hover {
+  transform: translateY(-10px) rotateX(8deg) rotateY(-8deg) scale(1.05);
+  box-shadow:
+    0 25px 45px rgba(0, 0, 0, 0.35),
+    0 0 25px rgba(255, 140, 0, 0.25);
+}
+
+.movie-sponsor-item .sponsor-image:hover img {
+  transform: scale(1.08) rotate(-2deg);
+  filter: brightness(1.1) drop-shadow(0 18px 30px rgba(0, 0, 0, 0.45));
+}
+.sponsor-image {
+  animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 .movie-sponsor-item-2 {
   display: flex;
