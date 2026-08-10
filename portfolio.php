@@ -249,11 +249,9 @@ foreach ($items as $item) {
                             <a href="contact.html" class="theme-btn text-center">Get Proposal</a>
                         </div>
                         <div class="social-icon d-flex align-items-center">
-                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                                <a href="tiktok.com/qasimshamsigfx"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.facebook.com/qsmarketingexpert"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="https://www.instagram.com/qsmarketingexpert/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -442,11 +440,9 @@ foreach ($items as $item) {
                                     performance marketing, creative, and strategy.
                                 </p>
                                 <div class="social-icon d-flex align-items-center">
-                                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                                        <a href="tiktok.com/qasimshamsigfx"><i class="fa-brands fa-tiktok"></i></a>
+                                    <a href="https://www.facebook.com/qsmarketingexpert"><i class="fab fa-facebook-f"></i></a>
+                                                                    <a href="https://www.instagram.com/qsmarketingexpert/"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>

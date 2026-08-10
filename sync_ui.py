@@ -116,10 +116,11 @@ OFFCANVAS_BLOCK = """    <!-- Offcanvas Area Start -->
                 </a>
               </div>
               <div class="social-icon d-flex align-items-center">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/qsmarketingexpert"><i class="fab fa-facebook-f"></i></a>
+                <a href="tiktok.com/qasimshamsigfx"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/qsmarketingexpert/"><i class="fab fa-instagram"></i></a>
+
+                <a href="https://www.linkedin.com/in/ghulam-qasim-marketingexpert/"><i class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </div>
